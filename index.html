@@ -3,83 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ajay Kushwaha | Cinematic Photographer</title>
+  <title>Ajay Kushwaha | RK Digital Studio</title>
   <style>
     body {
+      font-family: "Poppins", sans-serif;
       margin: 0;
-      padding: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #000;
+      background: #0a0a0a;
       color: #fff;
       text-align: center;
     }
     header {
-      padding: 60px 20px 20px;
+      background: linear-gradient(135deg, #ff0066, #ffcc00);
+      padding: 30px 10px;
     }
     h1 {
-      font-size: 42px;
-      letter-spacing: 1px;
+      margin: 10px 0 5px;
+      font-size: 32px;
+      color: #fff;
     }
     h2 {
-      font-size: 22px;
-      color: #aaa;
-      font-weight: 400;
-      margin-top: -10px;
+      margin: 0;
+      font-weight: normal;
+      font-size: 18px;
+      color: #ffe;
     }
     .quote {
-      margin: 40px auto;
-      font-size: 20px;
       font-style: italic;
-      color: #ccc;
-      width: 80%;
-      line-height: 1.6;
+      color: #ffcc66;
+      margin: 20px auto;
+      max-width: 80%;
+      font-size: 17px;
     }
     .details {
-      margin-top: 30px;
-      font-size: 18px;
+      margin: 20px 0;
+      font-size: 15px;
+      color: #ddd;
     }
     .contact-btn {
       display: inline-block;
-      margin-top: 40px;
-      background-color: #25d366;
-      color: #000;
+      background: #25d366;
+      color: white;
       text-decoration: none;
-      padding: 14px 30px;
-      border-radius: 6px;
+      padding: 10px 20px;
+      border-radius: 30px;
       font-weight: bold;
-      font-size: 18px;
-      transition: 0.3s ease;
+      transition: 0.3s;
     }
     .contact-btn:hover {
-      background-color: #1ebe57;
+      background: #1ebc59;
+    }
+    section {
+      padding: 40px 15px;
+    }
+    .about {
+      background: #111;
+      border-top: 2px solid #ffcc00;
+      border-bottom: 2px solid #ff0066;
+    }
+    .about p {
+      max-width: 600px;
+      margin: auto;
+      color: #ccc;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .gallery {
+      background: #000;
+    }
+    .gallery h2 {
+      color: #ffcc00;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+      padding: 0 10px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .gallery-grid img:hover {
       transform: scale(1.05);
     }
     footer {
-      margin-top: 70px;
-      padding: 20px;
+      background: #111;
+      color: #999;
       font-size: 14px;
-      color: #666;
-      border-top: 1px solid #222;
-    }
-    .photo-placeholder {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      background-color: #111;
-      border: 2px solid #333;
-      margin: 0 auto 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #555;
-      font-size: 14px;
+      padding: 15px;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="photo-placeholder">Add Your Photo</div>
     <h1>Ajay Kushwaha</h1>
     <h2>RK Digital Studio</h2>
   </header>
@@ -87,11 +107,25 @@
   <p class="quote">“तस्वीरें तो सब लेते हैं, पर मैं वो पल कैद करता हूँ जो ज़िंदगी भर याद आते हैं।”</p>
 
   <div class="details">
-    📍 Belwa Ghat, Maharajganj<br>
+    📍 Belwa Ghat, Maharajganj <br>
     📞 9555974180
   </div>
 
   <a class="contact-btn" href="https://wa.me/919555974180" target="_blank">Chat on WhatsApp</a>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>मैं Ajay Kushwaha, RK Digital Studio का Founder और Photographer हूँ। मुझे हर तस्वीर में कहानी ढूंढना पसंद है — चाहे वो शादी का लम्हा हो या किसी मुस्कान का फ्रेम।</p>
+  </section>
+
+  <section class="gallery">
+    <h2>My Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://via.placeholder.com/400x250?text=Photo+1" alt="Photo 1">
+      <img src="https://via.placeholder.com/400x250?text=Photo+2" alt="Photo 2">
+      <img src="https://via.placeholder.com/400x250?text=Photo+3" alt="Photo 3">
+    </div>
+  </section>
 
   <footer>
     © RK Digital Studio 2025 | Designed by Ajay Kushwaha
